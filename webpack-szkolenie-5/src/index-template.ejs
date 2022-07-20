@@ -1,0 +1,37 @@
+<!-- index-template.ejs z tego miejsca pobieramy wszystkie dane, potem Webpack dokłada tylko link(CSS) i script(JS) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Tytuł pobierany jest z webpack.config.js >>title<< ale poniższy zapis (widoczny tylko w pliku index-template.ejs) jest potrzebny, aby wszystko działało prawidłowo  -->
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+
+</head>
+
+<body>
+
+    <h1 id="demo">
+
+    </h1>
+    <h2 id="demo-two">
+        <p class="basic-info"></p>
+        <p class="local-host"></p>
+    </h2>
+
+    <div class="picture"></div>
+
+    <div class="background-image">
+        <img src="<%= require('./assets/img/photo-dandelion-field.jpg') %>" />
+    </div>
+    <div class="background-image-two"></div>
+
+    <div class="autoprefixer">Autoprefix</div>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+body {
+  background-color: rgba(77, 85, 182, 0.8);
+}
+
+* {
+  text-align: center;
+}
+
+#demo {
+  border: 3px dotted;
+}
+
+#demo-two {
+  font-size: 30px;
+}
+
+#demo-two .basic-info {
+  color: rgb(84, 15, 15);
+}
+
+#demo-two .local-host {
+  color: rgb(167, 20, 20);
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+div.flex-div {
+  display: flex;
+  justify-content: center;
+}
+
+div.picture {
+  /* Tu coś nie chce działać, jeszcze to trzeba sprawdzić */
+  border: 1px solid;
+  justify-content: center;
+  background-image: url("photo-dandelion-field.jpg");
+  background-repeat: no-repeat;
+  height: 350px;
+  width: calc(100% - 20vw);
+  max-width: 600px;
+}
