@@ -15,7 +15,7 @@
         "webpack-cli": "^4.9.2"
     },
     "dependencies": {
-        "npm": "^8.11.0"
+        "npm": "^9.8.1"
     }
 
 }
